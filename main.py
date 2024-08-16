@@ -10,7 +10,7 @@ import os
 from pymongo import MongoClient
 import logging
 
-url = "https://www.fragrantica.com/search/?query=donna"
+url = os.getenv('url')
 
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
